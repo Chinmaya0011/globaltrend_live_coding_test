@@ -62,7 +62,7 @@ const Signup = () => {
   };
 
   return (
-    <div className={styles.signUp}>
+    <div className={styles.signUp} style={{marginTop:"40px"}}>
       <h1 className={styles.title}>SignUp Form</h1>
       <form onSubmit={handleSubmit}>
         <div className={styles.field}>
