@@ -1,0 +1,73 @@
+/* Navbar.module.css */
+
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #33333384;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hamburger Menu Styles */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      text-align: center;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .link {
+      padding: 15px;
+      display: block;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
